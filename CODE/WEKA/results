@@ -1,0 +1,288 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     dataset-weka.filters.unsupervised.attribute.Remove-R2-3,6-7,17,20
+Instances:    4811
+Attributes:   16
+              età
+              fumo
+              gravidanza
+              familiarità_carcinoma_ovarico
+              struttura_ghiandolare
+              rapporto_cuteDX
+              rapporto_cuteSX
+              rapporto_areola_capezzoloDX
+              rapporto_areola_capezzoloSX
+              stato_linfonodaleDX
+              stato_linfonodaleSX
+              biRadsClinico
+              citologia_codifica
+              focalità
+              ricostruzione
+              Disease
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+ricostruzione = si : MASTECTOMIA
+ricostruzione != si : CONSERVATIVA
+ricostruzione is missing : CONSERVATIVA
+
+Class distributions
+
+ricostruzione = si
+MASTECTOMIA	CONSERVATIVA	
+0.9881081081081081	0.011891891891891892	
+ricostruzione != si
+MASTECTOMIA	CONSERVATIVA	
+0.05867215645908389	0.9413278435409161	
+ricostruzione is missing
+MASTECTOMIA	CONSERVATIVA	
+0.05867215645908389	0.9413278435409161	
+
+
+Weight: 2.95
+
+Decision Stump
+
+Classifications
+
+biRadsClinico = E1 : CONSERVATIVA
+biRadsClinico != E1 : MASTECTOMIA
+biRadsClinico is missing : CONSERVATIVA
+
+Class distributions
+
+biRadsClinico = E1
+MASTECTOMIA	CONSERVATIVA	
+0.17021276595744683	0.8297872340425532	
+biRadsClinico != E1
+MASTECTOMIA	CONSERVATIVA	
+0.8669293381955658	0.13307066180443425	
+biRadsClinico is missing
+MASTECTOMIA	CONSERVATIVA	
+0.31858556709339453	0.6814144329066056	
+
+
+Weight: 1.21
+
+Decision Stump
+
+Classifications
+
+familiarità_carcinoma_ovarico = no : MASTECTOMIA
+familiarità_carcinoma_ovarico != no : CONSERVATIVA
+familiarità_carcinoma_ovarico is missing : CONSERVATIVA
+
+Class distributions
+
+familiarità_carcinoma_ovarico = no
+MASTECTOMIA	CONSERVATIVA	
+0.823095980253659	0.17690401974634093	
+familiarità_carcinoma_ovarico != no
+MASTECTOMIA	CONSERVATIVA	
+0.09596257026679361	0.9040374297332064	
+familiarità_carcinoma_ovarico is missing
+MASTECTOMIA	CONSERVATIVA	
+0.3721203261213585	0.6278796738786414	
+
+
+Weight: 1.05
+
+Decision Stump
+
+Classifications
+
+focalità = no : MASTECTOMIA
+focalità != no : CONSERVATIVA
+focalità is missing : CONSERVATIVA
+
+Class distributions
+
+focalità = no
+MASTECTOMIA	CONSERVATIVA	
+0.8281078461692603	0.17189215383073975	
+focalità != no
+MASTECTOMIA	CONSERVATIVA	
+0.38090995435077263	0.6190900456492273	
+focalità is missing
+MASTECTOMIA	CONSERVATIVA	
+0.3787543345800227	0.6212456654199773	
+
+
+Weight: 1.01
+
+Decision Stump
+
+Classifications
+
+ricostruzione = si : MASTECTOMIA
+ricostruzione != si : MASTECTOMIA
+ricostruzione is missing : MASTECTOMIA
+
+Class distributions
+
+ricostruzione = si
+MASTECTOMIA	CONSERVATIVA	
+0.9079027107221532	0.09209728927784676	
+ricostruzione != si
+MASTECTOMIA	CONSERVATIVA	
+0.5880627356711746	0.4119372643288253	
+ricostruzione is missing
+MASTECTOMIA	CONSERVATIVA	
+0.5880627356711746	0.4119372643288253	
+
+
+Weight: 0.54
+
+Decision Stump
+
+Classifications
+
+ricostruzione = si : MASTECTOMIA
+ricostruzione != si : CONSERVATIVA
+ricostruzione is missing : CONSERVATIVA
+
+Class distributions
+
+ricostruzione = si
+MASTECTOMIA	CONSERVATIVA	
+0.8519480608634542	0.14805193913654582	
+ricostruzione != si
+MASTECTOMIA	CONSERVATIVA	
+0.45453425321634766	0.5454657467836522	
+ricostruzione is missing
+MASTECTOMIA	CONSERVATIVA	
+0.45453425321634766	0.5454657467836522	
+
+
+Weight: 0.32
+
+Decision Stump
+
+Classifications
+
+rapporto_areola_capezzoloSX = Regolare : MASTECTOMIA
+rapporto_areola_capezzoloSX != Regolare : MASTECTOMIA
+rapporto_areola_capezzoloSX is missing : MASTECTOMIA
+
+Class distributions
+
+rapporto_areola_capezzoloSX = Regolare
+MASTECTOMIA	CONSERVATIVA	
+0.5231571728022578	0.47684282719774224	
+rapporto_areola_capezzoloSX != Regolare
+MASTECTOMIA	CONSERVATIVA	
+0.8684127940539549	0.1315872059460451	
+rapporto_areola_capezzoloSX is missing
+MASTECTOMIA	CONSERVATIVA	
+0.9511119496539773	0.04888805034602268	
+
+
+Weight: 0.26
+
+Decision Stump
+
+Classifications
+
+rapporto_areola_capezzoloSX = Regolare : CONSERVATIVA
+rapporto_areola_capezzoloSX != Regolare : MASTECTOMIA
+rapporto_areola_capezzoloSX is missing : MASTECTOMIA
+
+Class distributions
+
+rapporto_areola_capezzoloSX = Regolare
+MASTECTOMIA	CONSERVATIVA	
+0.45915918976366865	0.5408408102363313	
+rapporto_areola_capezzoloSX != Regolare
+MASTECTOMIA	CONSERVATIVA	
+0.8362483042177804	0.1637516957822196	
+rapporto_areola_capezzoloSX is missing
+MASTECTOMIA	CONSERVATIVA	
+0.9377120980444821	0.062287901955517866	
+
+
+Weight: 0.29
+
+Decision Stump
+
+Classifications
+
+età = 37-49 : CONSERVATIVA
+età != 37-49 : MASTECTOMIA
+età is missing : CONSERVATIVA
+
+Class distributions
+
+età = 37-49
+MASTECTOMIA	CONSERVATIVA	
+0.36781193006509194	0.6321880699349082	
+età != 37-49
+MASTECTOMIA	CONSERVATIVA	
+0.6296590460485748	0.3703409539514252	
+età is missing
+MASTECTOMIA	CONSERVATIVA	
+0.0	1.0	
+
+
+Weight: 0.53
+
+Decision Stump
+
+Classifications
+
+fumo = si : CONSERVATIVA
+fumo != si : MASTECTOMIA
+fumo is missing : CONSERVATIVA
+
+Class distributions
+
+fumo = si
+MASTECTOMIA	CONSERVATIVA	
+0.45266658242936003	0.54733341757064	
+fumo != si
+MASTECTOMIA	CONSERVATIVA	
+0.5647651606858592	0.4352348393141408	
+fumo is missing
+MASTECTOMIA	CONSERVATIVA	
+0.2502704475095861	0.749729552490414	
+
+
+Weight: 0.34
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4589               95.3856 %
+Incorrectly Classified Instances       222                4.6144 %
+Kappa statistic                          0.8692
+Mean absolute error                      0.0684
+Root mean squared error                  0.187 
+Relative absolute error                 18.8958 %
+Root relative squared error             43.9588 %
+Total Number of Instances             4811     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,866    0,019    0,935      0,866    0,899      0,870    0,983     0,963     MASTECTOMIA
+                 0,981    0,134    0,959      0,981    0,970      0,870    0,983     0,994     CONSERVATIVA
+Weighted Avg.    0,954    0,107    0,953      0,954    0,953      0,870    0,983     0,986     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  989  153 |    a = MASTECTOMIA
+   69 3600 |    b = CONSERVATIVA
+
